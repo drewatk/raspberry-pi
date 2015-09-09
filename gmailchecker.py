@@ -8,7 +8,7 @@ print('press ctl-c to stop')
 try:
     while True:
         M = imaplib.IMAP4_SSL('imap.gmail.com')
-        M.login('drewatkinson5@gmail.com', 'cgvnhthdytvgttjm')
+        M.login('drewatkinson5@gmail.com', 'password')
         M.select()
         unread_count = len(M.search(None, 'UnSeen')[1][0].split())
         M.logout()
